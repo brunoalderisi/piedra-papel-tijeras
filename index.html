@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel, ¡Tijeras!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainbox">
+        <h1>
+            ¡Piedra, Papel o Tijeras!
+        </h1>
+        <div class="score">
+            <div class="scorePlayer">
+                <p>Tu puntuación es: </p>
+                <p class="scoreScreen" id="scoreScreenPlayer">0</p>
+            </div>
+            <div class="scorePC">
+                <p>Puntos del PC: </p>
+                <p class="scoreScreen" id="scoreScreenPC">0</p>
+            </div>
+        </div>
+        <div class="mainScreen">
+            <div class="eleccionScreen">
+                <div class="tuEleccion">
+                    <img src="./assets/tijeras.png" class="eleccionJuego"  id="eleccionTuya">
+                </div>
+                <div class="eleccionPC">
+                    <img src="./assets/papel.png"  class="eleccionJuego" id="eleccionDelPC">
+                </div>
+            </div>
+            <div class="pPoT">
+                <button class="botonEleccion" id="botonPapel" value="1"><img src="./assets/papel.png" alt="papel" id="papel" width="150px"></button>
+                <button class="botonEleccion" id="botonTijera" value="2"><img src="./assets/tijeras.png" alt="tijera" id="tijera" width="150px"></button>
+                <button class="botonEleccion" id="botonPiedra" value="3"><img src="./assets/piedra.png" alt="piedra" id="piedra" width="150px"></button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
